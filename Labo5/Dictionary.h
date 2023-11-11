@@ -1,5 +1,3 @@
-#pragma once
-
 #include <iostream>
 #include <vector>
 
@@ -9,12 +7,16 @@ template <typename K, typename V>
 class Dictionary
 {
 private:
-	int size;
-	vector<pair<K, V>>* buckets;
+	int GetHash(K key);
+	vector<pair<K, V>>() buckets;
+
 public:
-	Dictionary(int capacity);
+	void Insert(K key, V val);
+	pair<K, V> Find(K key);
+	void Delete(K key);
 
-
+	friend ostream& operator<<();
+	friend ostream& operator<<();
 
 };
 
