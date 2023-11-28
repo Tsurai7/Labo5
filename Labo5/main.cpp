@@ -138,9 +138,6 @@ int main() {
                 std::cout << "Key: " << result.first << ", Value: " << result.second << std::endl;
             }
 
-            else {
-                std::cout << "Key not found." << std::endl;
-            }
             break;
         }
         case 3: {
